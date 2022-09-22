@@ -1,3 +1,44 @@
+:root {
+  --button-color: #9df7e5;
+  --main-text-color: #8b8982;
+  --branding-color: #aeb8fe;
+  --hover-color: #8dddcd;
+}
+
 body {
   font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.hero {
+  margin: 80px auto;
+}
+
+.hero h1 {
+  font-weight: 800;
+  font-size: 3.8rem;
+  margin-bottom: 40px;
+  line-height: 1;
+  letter-spacing: -0.1rem;
+}
+
+.hero h2 {
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--main-text-color);
+}
+
+.hero a {
+  background-color: var(--button-color);
+  border: none;
+  color: #000000;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 15px 30px;
+  text-transform: capitalize;
+}
+
+.hero a.hero-button:hover {
+  background-color: var(--hover-color);
 }
