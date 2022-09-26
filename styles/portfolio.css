@@ -47,6 +47,15 @@ hr {
   border: none;
 }
 
+footer {
+  background-color: var(--primary-color);
+  color: var(--primary-light-color);
+  text-align: center;
+  font-size: 0.6em;
+  letter-spacing: -0.03em;
+  font-weight: 600;
+}
+
 .hero {
   margin: 80px auto;
 }
@@ -146,7 +155,7 @@ hr {
   margin-top: 50px;
 }
 
-.contact-section {
+.contact-box {
   background-color: var(--primary-light-color);
   text-align: center;
   border: none;
@@ -156,7 +165,7 @@ hr {
 
 .contact-card-paragraph {
   margin: 0;
-  margin-top: 60px;
+  margin-top: 45px;
   padding: 0 120px;
 }
 
@@ -172,6 +181,35 @@ hr {
   color: var(--primary-dark-color) !important;
 }
 
+.contact-box-header {
+  font-weight: 800;
+  font-size: 1.8em;
+  text-transform: capitalize;
+  letter-spacing: -0.03em;
+  margin-top: 45px;
+}
+
+.footer-logo {
+  padding: 40px 0 10px 0;
+}
+
+.footer-logo img {
+  width: 150px;
+}
+
+.social-links a {
+  font-size: 1.6rem;
+  margin: 0 5px;
+  color: var(--primary-dark-color);
+  text-align: center;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: var(--primary-light-color);
+  transition: all 100ms ease-in-out;
+}
+
 @media (max-width: 768px) {
   h1 {
     font-size: 2.8em;
@@ -181,7 +219,6 @@ hr {
   h2 {
     font-size: 2em;
   }
-
   .hero {
     text-align: center;
     display: block;
