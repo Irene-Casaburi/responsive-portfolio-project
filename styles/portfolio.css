@@ -155,7 +155,7 @@ footer {
   margin-top: 50px;
 }
 
-.contact-box {
+.contact-section {
   background-color: var(--primary-light-color);
   text-align: center;
   border: none;
@@ -165,7 +165,7 @@ footer {
 
 .contact-card-paragraph {
   margin: 0;
-  margin-top: 45px;
+  margin-top: 30px;
   padding: 0 120px;
 }
 
@@ -181,7 +181,7 @@ footer {
   color: var(--primary-dark-color) !important;
 }
 
-.contact-box-header {
+.contact-section-header {
   font-weight: 800;
   font-size: 1.8em;
   text-transform: capitalize;
