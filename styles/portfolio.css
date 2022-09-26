@@ -163,7 +163,7 @@ footer {
   border-top-left-radius: 100px;
 }
 
-.contact-card-paragraph {
+.contact-section-paragraph {
   margin: 0;
   margin-top: 30px;
   padding: 0 120px;
@@ -252,7 +252,7 @@ footer {
     text-align: center;
   }
 
-  .contact-card-paragraph {
+  .contact-section-paragraph {
     padding: 0 60px;
   }
 }
