@@ -56,12 +56,24 @@ footer {
   font-weight: 600;
 }
 
+.home-hero {
+  background-image: url(/images/home-bg-full.jpg);
+  background-size: contain;
+  background-position: top right;
+  background-repeat: no-repeat;
+  padding-bottom: 70px;
+}
+
 .hero {
   margin: 80px auto;
 }
 
 .hero h3 {
   text-transform: none;
+}
+
+.hero-heading {
+  width: 70%;
 }
 
 .hero-paragraph {
@@ -219,9 +231,18 @@ footer {
   h2 {
     font-size: 2em;
   }
+
+  .home-hero {
+    background-image: url(/images/home-bg-mobile.jpg);
+  }
+
   .hero {
     text-align: center;
     display: block;
+  }
+
+  .hero-heading {
+    width: 100%;
   }
 
   .hero-paragraph {
