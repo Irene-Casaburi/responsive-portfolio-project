@@ -11,6 +11,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 16px;
+  min-height: 100vh;
 }
 
 h1 {
@@ -64,21 +65,13 @@ footer {
   padding-bottom: 70px;
 }
 
-.hero {
-  margin: 80px auto;
-}
-
 .hero h3 {
   text-transform: none;
+  padding-top: 70px;
 }
 
 .hero-heading {
   width: 70%;
-}
-
-.hero-paragraph {
-  margin-bottom: 60px;
-  padding: 0 120px;
 }
 
 .primary-button {
@@ -151,6 +144,7 @@ footer {
   display: flex;
   flex-direction: row;
   align-items: center;
+  overflow: hidden;
 }
 
 .project-image {
@@ -251,6 +245,54 @@ footer {
   .primary-card {
     margin: 10px auto;
   }
+
+  .project-image {
+    flex: 1;
+    margin-left: 40px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .project-description {
+    flex: 1;
+    padding: 50px;
+    text-align: start;
+  }
+
+  .even-row .project-image {
+    margin-left: 0;
+    margin-right: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .project-image {
+    margin-left: 0px;
+    border-radius: 0px;
+    box-shadow: none;
+  }
+
+  .even-row .project-image {
+    margin-right: 0;
+  }
+
+  .project-row {
+    flex-direction: column;
+  }
+
+  .project-row.even-row {
+    flex-direction: column-reverse;
+  }
+
+  .project-button {
+    text-align: center;
+  }
+
+  .project-description {
+    text-align: center;
+    padding: 30px 20px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -277,7 +319,7 @@ footer {
   }
 
   .hero-paragraph {
-    padding: 0;
+    padding: 0 20px;
   }
 
   .hero-heading {
@@ -296,22 +338,6 @@ footer {
     margin: 10px auto;
   }
 
-  .project-row {
-    flex-direction: column;
-  }
-
-  .project-row.even-row {
-    flex-direction: column-reverse;
-  }
-
-  .project-button {
-    text-align: center;
-  }
-
-  .project-description {
-    text-align: center;
-  }
-
   .contact-section-paragraph {
     padding: 0 60px;
   }
@@ -319,7 +345,6 @@ footer {
   .navbar-collapse {
     text-align: center;
     background-color: var(--primary-light-color);
-    /* padding: 0 20px; */
     border-radius: 10px;
     margin-top: 10px;
   }
