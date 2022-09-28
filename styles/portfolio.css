@@ -153,7 +153,7 @@ footer {
 
 .project-description {
   flex: 1;
-  padding: 50px;
+  padding: 0 50px;
   text-align: start;
 }
 
@@ -225,6 +225,32 @@ footer {
   transition: all 100ms ease-in-out;
 }
 
+.credentials-section p {
+  font-size: 1em;
+}
+
+.skill-image img {
+  width: 60%;
+  height: 35px;
+  margin-bottom: 5px;
+  object-fit: contain;
+}
+
+.skill-name {
+  font-size: 0.8em;
+  color: var(--main-text-color);
+}
+
+.certificate-name {
+  font-size: 0.8em;
+  color: var(--primary-color);
+}
+
+.certificate-name:hover {
+  color: var(--primary-dark-color);
+  transition: all 100ms ease-in-out;
+}
+
 @media (max-width: 991px) {
   .hero h3 {
     color: var(--main-text-color);
@@ -263,6 +289,9 @@ footer {
   .even-row .project-image {
     margin-left: 0;
     margin-right: 40px;
+  }
+  .skill-name {
+    padding-bottom: 15px;
   }
 }
 
