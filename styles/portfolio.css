@@ -11,7 +11,6 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 16px;
-  min-height: 100vh;
 }
 
 h1 {
@@ -65,13 +64,18 @@ footer {
   padding-bottom: 70px;
 }
 
-.hero h3 {
+.hero .home-intro {
   text-transform: none;
   padding-top: 70px;
 }
 
 .hero-heading {
   width: 70%;
+}
+
+.hero-paragraph {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .primary-button {
@@ -172,7 +176,7 @@ footer {
 .contact-section-paragraph {
   margin: 0;
   margin-top: 30px;
-  padding: 0 120px;
+  padding: 0 100px;
 }
 
 .email-link {
@@ -225,6 +229,15 @@ footer {
   transition: all 100ms ease-in-out;
 }
 
+.footer-code a {
+  color: var(--primary-dark-color);
+}
+
+.footer-code a:hover {
+  color: var(--primary-light-color);
+  transition: all 100ms ease-in-out;
+}
+
 .credentials-section p {
   font-size: 1em;
 }
@@ -251,8 +264,18 @@ footer {
   transition: all 100ms ease-in-out;
 }
 
+.full-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.contact-container {
+  flex: 1;
+}
+
 @media (max-width: 991px) {
-  .hero h3 {
+  .hero .home-intro {
     color: var(--main-text-color);
   }
 
@@ -293,6 +316,10 @@ footer {
   .skill-name {
     padding-bottom: 15px;
   }
+
+  .contact-section-paragraph {
+    padding: 0 60px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -322,6 +349,14 @@ footer {
     text-align: center;
     padding: 30px 20px;
   }
+
+  .accreditation-image img {
+    max-width: 80%;
+  }
+
+  .certificate-name {
+    margin-bottom: 15px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -343,7 +378,7 @@ footer {
     display: block;
   }
 
-  .hero h3 {
+  .hero .home-intro {
     color: var(--primary-light-color);
   }
 
@@ -355,20 +390,12 @@ footer {
     width: 100%;
   }
 
-  .hero-paragraph {
-    padding: 0;
-  }
-
   .primary-button {
     font-size: 14px;
   }
 
   .primary-card {
     margin: 10px auto;
-  }
-
-  .contact-section-paragraph {
-    padding: 0 60px;
   }
 
   .navbar-collapse {
