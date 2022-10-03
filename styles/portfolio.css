@@ -382,10 +382,6 @@ footer {
     color: var(--primary-light-color);
   }
 
-  .hero-paragraph {
-    padding: 0 20px;
-  }
-
   .hero-heading {
     width: 100%;
   }
