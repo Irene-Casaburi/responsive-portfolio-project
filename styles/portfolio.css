@@ -264,6 +264,10 @@ footer {
   transition: all 100ms ease-in-out;
 }
 
+.first-row {
+  margin-bottom: 15px;
+}
+
 .full-page {
   display: flex;
   flex-direction: column;
@@ -356,6 +360,10 @@ footer {
 
   .certificate-name {
     margin-bottom: 15px;
+  }
+
+  .first-row {
+    margin-bottom: 0px;
   }
 }
 
